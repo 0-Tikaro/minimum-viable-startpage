@@ -8,7 +8,7 @@ This is a startpage I put together on one lazy afternoon. Cheers. :cat2:
 A startpage is a small custom webpage that replaces the new tab page of your browser. It's usually done for the sake of aesthetics or to raise the efficiency of your day-to-day work with the Internet. (But mostly for aesthetics)
 
 ## Shortcuts
-MVS supports keyboard shortcuts, so you don't even have to use the mouse to get anywhere! By default shortcuts come in the <kbd>tab</kbd>+<kbd>KEY</kbd> format. <kbd>Tab</kbd> in this case is the *shortcut starter* which tells the page to start listening for shortcuts. <kbd>KEY</kbd> is the actual shortcut unique to each item on the page. Both parts of a keyboard shortcut are customizable.
+MVS supports keyboard shortcuts, so you don't even have to use the mouse to get anywhere! By default shortcuts come in the <kbd>Tab</kbd>+<kbd>KEY</kbd> format. <kbd>Tab</kbd> in this case is the *shortcut starter* which tells the page to start listening for shortcuts. <kbd>KEY</kbd> is the actual shortcut unique to each item on the page. Both parts of a keyboard shortcut are customizable.
 
 Forgot which key led to which page? Simply pressing <kbd>Tab</kbd> will briefly flash all the shortcuts next to their relevant links.
 

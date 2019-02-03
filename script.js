@@ -2,9 +2,16 @@ const NAME = "John";
 const WELCOME_MESSAGE_TEMPLATE = ["night", "morning", "afternoon", "evening"];
 
 // All shortcuts are in a `SHORTCUT_STARTER+shortcutKey` format. 
-//So, for example, pressing `tab+q` would redirect you to https://google.com/?q=q
+// So, for example, pressing `tab+q` would redirect you to https://google.com/?q=q
 const SHORTCUT_STARTER = 'tab' 
-const SHORTCUT_TIMEOUT = 1500; // How much time (in milliseconds) you have to press shortcutKey after pressing SHORTCUT_STARTER
+
+// How much time (in milliseconds) you have to press shortcutKey after pressing SHORTCUT_STARTER.
+// Also change --SHORTCUT_TIMEOUT in styles.css if you change this option.
+const SHORTCUT_TIMEOUT = 1500;
+
+// The groups of links are generated from this object. Edit it to edit the page's contents.
+// shortcutKey must hold an all-lowercase single button. Theoretically should work with values like `esc` and `f1`,
+// but intended to be used with just regular latin letters.
 const MASTER_MAP = [
     {
         "groupName": "Studies",

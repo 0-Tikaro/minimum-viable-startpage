@@ -5,6 +5,7 @@
     --bg-color: #223030;
     --text-color: #dddddd;
     --bg-image: url("assets/bg.jpg");
+    --SHORTCUT_TIMEOUT: 1.5s;
 }
 body {
     padding: 0;
@@ -75,7 +76,7 @@ body {
 .shortcut {
     float: right;
     opacity: 0;
-    animation: pulse 1.5s;
+    animation: pulse var(--SHORTCUT_TIMEOUT);
 }
 
 a, a:hover {

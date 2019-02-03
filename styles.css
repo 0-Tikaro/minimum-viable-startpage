@@ -6,7 +6,6 @@
     --text-color: #dddddd;
     --bg-image: url("assets/bg.jpg");
 }
-
 body {
     padding: 0;
     margin: 0;
@@ -21,22 +20,16 @@ body {
     user-select: none;
     animation: fadein 1s;
 }
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 
 #logo {
     padding-top: 25vh;
     text-align: center;
 }
-
 #logo h1 {
     font-weight: 200;
     font-size: 4rem;
     margin-bottom: 0;
 }
-
 #logo h2 {
     font-weight: 200;
     font-size: 2rem;
@@ -79,6 +72,12 @@ body {
     margin: 0;
 }
 
+.shortcut {
+    float: right;
+    opacity: 0;
+    animation: pulse 1.5s;
+}
+
 a, a:hover {
     transition: all 0.4s ease;
 }
@@ -96,4 +95,15 @@ a {
 }
 #credits a:hover {
     opacity: 1;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes pulse {
+    0% { opacity: 0; }
+    20% { opacity: 0.3; }
+    80% { opacity: 0.3; }
+    100%   { opacity: 0; }
 }

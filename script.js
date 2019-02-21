@@ -92,7 +92,7 @@ function shortcutListener(e) {
     let key = e.key.toLowerCase();
 
     if (listeningForShortcut && getUrl.hasOwnProperty(key)){
-        window.location = getUrl.key;
+        window.location = getUrl[key];
     }
 
     if (key === SHORTCUT_STARTER) {

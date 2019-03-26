@@ -4,16 +4,14 @@
 :root {
     --bg-color: #223030;
     --text-color: #dddddd;
-    --bg-image: url("assets/bg.jpg");
+    --divider-color: rgba(221, 221, 221, 0.02);
+    --darken-opacity: 0.3;
     --SHORTCUT_TIMEOUT: 1.5s;
 }
 body {
     padding: 0;
     margin: 0;
 
-    background: var(--bg-image);
-    background-color: var(--bg-color);
-    background-size: cover;
     color: var(--text-color);
 
     font-family: 'Raleway', sans-serif;
@@ -21,6 +19,36 @@ body {
 
     user-select: none;
     animation: fadein 1s;
+}
+
+#beforeContainer {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-color: var(--bg-color);
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, var(--darken-opacity)), rgba(0, 0, 0, var(--darken-opacity)));
 }
 
 #logo {
@@ -71,6 +99,12 @@ body {
     padding: 0.3rem 0;
 }
 .group p + p {
+    margin: 0;
+}
+
+.group hr {
+    border: 1px dotted var(--divider-color);
+    padding: 0;
     margin: 0;
 }
 

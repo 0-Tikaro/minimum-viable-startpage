@@ -1,0 +1,50 @@
+const NAME = "John";
+const WELCOME_MESSAGE_TEMPLATE = ["night", "morning", "afternoon", "evening"];
+
+// All shortcuts are in a `SHORTCUT_STARTER+shortcutKey` format.
+// So, for example, pressing `tab+q` would redirect you to https://google.com/?q=q
+const SHORTCUT_STARTER = 'tab'
+
+// How much time (in milliseconds) you have to press shortcutKey after pressing SHORTCUT_STARTER.
+// Also change --SHORTCUT_TIMEOUT in styles.css if you change this option.
+const SHORTCUT_TIMEOUT = 1500;
+
+// A list of background images to be displayed at random. Find images you like at: https://source.unsplash.com/random/1920×1080
+const BACKGROUND_IMAGES = [
+  "https://images.unsplash.com/photo-1551634039-774fb4acf042?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+  "https://images.unsplash.com/photo-1551432434-d5f2bdc62ce9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+  "https://images.unsplash.com/photo-1552400778-ef424af551f7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+  "https://images.pexels.com/photos/1832328/pexels-photo-1832328.jpeg?cs=srgb&dl=adventure-agriculture-asia-1832328.jpg&fm=jpg?dl&fit=crop&crop=entropy&w=1920&h=1280",
+  "assets/bg.jpg"
+]
+
+// The groups of links are generated from this object. Edit it to edit the page's contents.
+// shortcutKey must hold an all-lowercase single button. Theoretically should work with values like `esc` and `f1`,
+// but intended to be used with just regular latin letters.
+const MASTER_MAP = [
+    {
+        "groupName": "Studies",
+        "items":[
+            {"name": "Item A", "shortcutKey": "q", "url": "https://google.com/?q=q"},
+            {"name": "Item B", "shortcutKey": "w", "url": "https://google.com/?q=w"},
+            {"divider": true},
+            {"name": "Item C", "shortcutKey": "e", "url": "https://google.com/?q=e"}
+        ]
+    },
+    {
+        "groupName": "Work",
+        "items":[
+            {"name": "Item D", "shortcutKey": "a", "url": "https://google.com/?q=a"},
+            {"name": "Item E", "shortcutKey": "s", "url": "https://google.com/?q=s"},
+            {"name": "Item F", "shortcutKey": "d", "url": "https://google.com/?q=d"}
+        ]
+    },
+    {
+        "groupName": "Personal",
+        "items":[
+            {"name": "Item I", "shortcutKey": "z", "url": "https://google.com/?q=z"},
+            {"name": "Item J", "shortcutKey": "x", "url": "https://google.com/?q=x"},
+            {"name": "Item K", "shortcutKey": "c", "url": "https://google.com/?q=c"}
+        ]
+    }
+]

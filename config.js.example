@@ -1,5 +1,6 @@
 const NAME = "John";
 const WELCOME_MESSAGE_TEMPLATE = ["night", "morning", "afternoon", "evening"];
+const HIDE_CREDITS = false;
 
 // All shortcuts are in a `SHORTCUT_STARTER+shortcutKey` format.
 // So, for example, pressing `tab+q` would redirect you to https://google.com/?q=q

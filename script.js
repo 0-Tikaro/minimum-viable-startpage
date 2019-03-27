@@ -11,6 +11,10 @@ function setBackgroundImage() {
     beforeContainer.style.backgroundImage = "url('" + imgUrl + "')";
 }
 
+function hideCredits() {
+    if (HIDE_CREDITS == true) { document.getElementById('credits').style.display = 'none'; }
+}
+
 function setupWelcomeMessage() {
     let curHours = new Date().getHours();
     curHours = Math.floor(curHours / 6); // Simply dividing current hours by 6 proves to be a good enough aproximation.
@@ -81,6 +85,7 @@ function shortcutListener(e) {
 
 function main() {
     setBackgroundImage();
+    hideCredits();
     setupWelcomeMessage();
     setupGroups();
     document.addEventListener('keyup', shortcutListener, false);

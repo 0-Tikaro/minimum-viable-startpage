@@ -50,11 +50,13 @@ function setupGroups() {
                 link.setAttribute("href", curItemData.url);
                 pContainer.appendChild(link);
 
-                let shortcutDisplay = document.createElement("span");
-                shortcutDisplay.innerHTML = curItemData.shortcutKey;
-                shortcutDisplay.className = "shortcut";
-                shortcutDisplay.style.animation = "none";
-                pContainer.appendChild(shortcutDisplay);
+                if (curItemData.shortcutKey) {
+                    let shortcutDisplay = document.createElement("span");
+                    shortcutDisplay.innerHTML = curItemData.shortcutKey;
+                    shortcutDisplay.className = "shortcut";
+                    shortcutDisplay.style.animation = "none";
+                    pContainer.appendChild(shortcutDisplay);
+                }
 
                 getUrl[curItemData.shortcutKey] = curItemData.url
             }

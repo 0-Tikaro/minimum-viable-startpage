@@ -13,8 +13,9 @@ body {
 
     background: var(--bg-image);
     background-color: var(--bg-color);
+    background-size: cover;
     color: var(--text-color);
-    
+
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
 
@@ -67,7 +68,7 @@ body {
 }
 .group p {
     margin-bottom: 0;
-    padding: 0.3rem 0; 
+    padding: 0.3rem 0;
 }
 .group p + p {
     margin: 0;
@@ -83,7 +84,7 @@ a, a:hover {
     transition: all 0.4s ease;
 }
 a {
-    padding: 0.3rem 0; 
+    padding: 0.3rem 0;
     color: var(--text-color);
     text-decoration: none;
 
